@@ -13,10 +13,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.StringTokenizer;
+import java.util.*;
 import java.util.stream.Collectors;
 @Service
 public class ParserServiceImpl implements ParserService {
@@ -134,7 +131,7 @@ public class ParserServiceImpl implements ParserService {
     @Override
     public void generateReportFile(CallDetailsReportDto callDetailsReportDto) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.writeValue(new File("src/main/resources/report.txt"), callDetailsReportDto);
+        objectMapper.writeValue(new File("src/main/resources/report" + UUID.randomUUID().toString() +  ".txt"), callDetailsReportDto);
     }
 
 }

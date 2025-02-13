@@ -1,1 +1,0 @@
-{"totalCostOfCallsForEachAccNum":{"46002255":75,"46002256":76,"46001122":43,"46002258":22},"totalCostOfCallsForCallTypeP":"90","totalCostOfCallsForCallTypeS":"92","totalCostOfCallsForCallTypeM":"34","totalCostOfCallOfADay":"216"}
